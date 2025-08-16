@@ -1,1 +1,2 @@
-
+import preguntas
+import puntajes

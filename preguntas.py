@@ -4,7 +4,7 @@ preguntas=[
     ("¿El cielo es de color azul?", "si"),
     ("¿Los perros pueden volar naturalmente", "no"),
     ("¿El hierro flota con el agua?","no"),
-    ("¿ 2+2 es cuatro?", "si"),
+    ("¿2+2 es cuatro?", "si"),
     ("El agua tiene un sabor dulce naturalmente?", "no"),
     #preguntas medio faciles
     ("¿Las ranas son anfibios", "si"),
@@ -26,6 +26,3 @@ preguntas=[
     ("¿El planeta Marte es más grande que Júpiter?","no"),
     ("¿Los humanos necesitan oxígeno para vivir?","si"),
 ]
-
-for pregunta, respueta in preguntas:
-    print(pregunta,"-", respueta)

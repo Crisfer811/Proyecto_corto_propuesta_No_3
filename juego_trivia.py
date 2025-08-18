@@ -30,3 +30,15 @@ def jugar_trivia():
         puntaje_total += preguntas_mostrar(texto, respuesta_correcta, valor)
 
     return puntaje_total, total
+
+
+def mostrar_resultado(puntaje_total, total, historial):
+    print("Juego terminado.")
+    print(f"Tu puntaje final es: {puntaje_total}/{total}")
+    historial.append(f"{puntaje_total}/{total}")
+    print("Historial de resultados:", historial)
+
+
+historial_resultados = []
+puntaje_total, total = jugar_trivia()
+mostrar_resultado(puntaje_total, total, historial_resultados)

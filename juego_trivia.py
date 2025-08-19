@@ -5,17 +5,17 @@ import puntajes
 def mostrar_bienvenida():
     print("----Bienvenido a la trivia de preguntas----\n")
     print("----A continuacion se le presentaran las preguntas----\n")
-
+    print("----Deberea responder Verdadero o falso en cada pregunta----\n")
 
 def preguntas_mostrar(texto, respuesta_correcta, valor):
     print(texto)
-    respuesta = input("----Responde Si/No en cada pregunta: ").lower()
+    respuesta = input("V/F: ").lower()    
     if respuesta == respuesta_correcta:
         print(f"Correcto! (+{valor} puntos)\n")
         return valor
     else:
-        print("----Respuesta incorrecta----\n")
-        print("----Pasando a la siguiente pregunta----\n")
+        print("Respuesta incorrecta\n")
+        print("Pasando a la siguiente pregunta\n")
         return 0
 
 
